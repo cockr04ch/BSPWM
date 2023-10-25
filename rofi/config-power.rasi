@@ -1,0 +1,49 @@
+configuration {
+font : "DaddyTimeMono Nerd Font 12 ";
+       show-icons : false;
+       drun-display-format: "{name}";
+       disable-history: false;
+       sidebar-mode: false;
+}
+
+
+window {
+transparency: "real";
+	      border-radius : 0;
+width : 100%;
+height: 100%;
+}
+
+listview {
+margin:                         0% 0% 0% 0%;
+spacing:                        3%;
+cycle:                          true;
+dynamic:                        true;
+layout:                         horizontal;
+}
+
+mainbox {
+children:                       [ listview ];
+spacing:                        5%;
+padding:                        32.50% 0% 0% 16.25%;
+}
+
+element {
+orientation:                    horizontal;
+				border-radius:                  12px;
+}
+
+element-text {
+	background-color: 				      #00000000;
+	text-color:       				      inherit;
+font: "DaddyTimeMono Nerd Font 62";
+expand:                         true;
+				horizontal-align:               0.5;
+				vertical-align:                 0.5;
+margin:                         6.5% 4% 6.5% 4%;
+}
+
+element selected {
+border:                  		    0.2%;
+					    border-radius:                  12px;
+}
