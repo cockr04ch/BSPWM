@@ -1,0 +1,28 @@
+
+#Basic Settings
+set icons true
+set ignorecase true
+set drawbox
+
+
+map <a-n> newfold
+
+cmd newfold ${{
+	set -f
+		read newd
+		printf "Directory name: "
+		mkdir -- "$newd"
+		mv -- $fx "$newd"
+}}
+
+
+#Basic Functions
+map . set hidden!
+map <enter> shell
+
+
+# Movement
+map gc cd ~/.config/
+map gd cd ~/Descargas/
+map gD cd ~/Documentos/
+map gh cd ~/
