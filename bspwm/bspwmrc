@@ -6,8 +6,8 @@ pgrep -x picom > /dev/null || picom -b --experimental-backends --config $HOME/.c
 
 bspc monitor -d I II III IV V VI VII VIII IX X
 
-bspc config border_width         2
-bspc config window_gap          10
+bspc config border_width         0
+bspc config window_gap          20
 
 bspc config split_ratio          0.52
 bspc config borderless_monocle   true
@@ -46,7 +46,7 @@ wmname LG3D
 xsetroot -cursor_name left_ptr &
 
 # Wallpaper
-feh --bg-fill $HOME/Imágenes/Wallpapers/Minimalistic/7645o6b2nno81.png &
+feh --bg-fill $HOME/Imágenes/Wallpapers/Minimalistic/tokyo.png &
 
 # Polkit
 /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
